@@ -8,10 +8,10 @@ LD=kos32-ld
 STRIP=kos32-strip
 OBJCOPY=kos32-objcopy
 
-KOLIBRIOS_REPO=../../kolibrios
+KOLIBRIOS_REPO=../kolibrios
 
 C_LAYER_DIR=$(KOLIBRIOS_REPO)/contrib/C_Layer
-LUA_DIR=../../lua-kolibrios
+LUA_DIR=../lua-kolibrios
 SQLITE3_DIR=$(SDK_DIR)/sources/sqlite3
 
 SDK_DIR=$(KOLIBRIOS_REPO)/contrib/sdk
@@ -66,7 +66,7 @@ test: $(T)
 	$(LUAEXE) test.lua
 	$(LUAEXE) tests-sqlite3.lua
 
-$(T):	$(OBJS) $()
+$(T):	$(OBJS) $(LUALIB)
 	$(CC) $(SHFLAGS) $(SOFLAGS) -o $@ $(OBJS) $(LIBS)
 
 install: $(T) $(OBJS) $(SQLITE3_DIR)/libsqlite3.dll.a
@@ -96,3 +96,5 @@ $(MYLIB).o: lsqlite3.c
 extras/extension-functions.o: extras/extension-functions.c
 $(SQLITE3_DIR)/libsqlite3.dll.a: 
 	$(MAKE) -C $(SQLITE3_DIR) libsqlite3.dll.a
+$(LUALIB):
+	$(MAKE) -C $(LUAINC) lua54.dll

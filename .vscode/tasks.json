@@ -2,49 +2,13 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "Rebuild",
-            "command": "-C ${workspaceFolder} rebuild",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Rebuild this lib",
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "options": {
-                "shell": {
-                    "executable": "make",
-                }
-            }
-        },
-        {
-            "type": "shell",
             "label": "Build",
-            "command": "-C ${workspaceFolder}  build",
+            "command": "-C ${workspaceFolder} all",
             "group": {
                 "kind": "build",
                 "isDefault": false
             },
             "detail": "Build this lib",
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "options": {
-                "shell": {
-                    "executable": "make",
-                }
-            }
-        },
-        {
-            "type": "shell",
-            "label": "Debug Build",
-            "command": "-C ${workspaceFolder} \"MYCFLAGS=-DNDEBUG\" build",
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            },
-            "detail": "Debug build this lib",
             "problemMatcher": [
                 "$gcc"
             ],
