@@ -1,0 +1,33 @@
+{
+    "files.associations": {
+        "kolibri_libini.h": "c",
+        "lua.hpp": "cpp",
+        "ksys.h": "c",
+        "lua.h": "c",
+        "luaconf.h": "c"
+    },
+    "editor.insertSpaces": false,
+    "cSpell.enabled": true,
+    "cSpell.words": [
+        "kolibrios",
+        "libini",
+        "ksys_",
+        "kolibri",
+        "luaL_newlib",
+        "luaL_pushfail",
+        "luaL_checkinteger",
+        "luaL_checkstring",
+        "lua_pushstring",
+        "lua_pushinteger",
+        "lua_pushboolean",
+        "lua_pushnil",
+        "lua_setfield",
+        "lua_gettop",
+        "lua_isfunction",
+        "lua_createtable",
+        "lua_pcall",
+        "LUALIB_API",
+        "luaopen_",
+        "lualibini_"
+    ],
+}

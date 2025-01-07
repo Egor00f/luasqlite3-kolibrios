@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/../kolibrios/contrib/sdk/sources/newlib/libc/include",
+                "${workspaceFolder}/../kolibrios/contrib/sdk/sources/sqlite3",
+                "${workspaceFolder}/../kolibrios/contrib/C_Layer/INCLUDE",
+                "${workspaceFolder}/../lua-kolibrios/src"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "C:/MinGW/msys/1.0/home/autobuild/tools/win32/bin/kos32-gcc.exe",
+            "intelliSenseMode": "gcc-x86"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/../kolibrios/contrib/sdk/sources/newlib/libc/include",
+                "${workspaceFolder}/../kolibrios/contrib/sdk/sources/sqlite3",
+                "${workspaceFolder}/../kolibrios/contrib/C_Layer/INCLUDE",
+                "${workspaceFolder}/../lua-kolibrios/src"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/home/autobuild/tools/win32/bin/kos32-gcc"
+        }
+    ],
+    "version": 4
+}
