@@ -1,0 +1,31 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - uses: egor00f/install-kolibrios-toolchain-action@v1.1
+
+    - name: kolibrios repo
+      run: cd .. && git clone https://github.com/KolibriOS/kolibrios.git
+
+    - name: lua repo
+      run: cd .. && git clone https://github.com/egor00f/lua-kolibrios.git
+
+    - name: Build
+      run: make all
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+          name: lsqlite3-build
+          path: ./lsqlite3.dll
