@@ -9,6 +9,8 @@
     "editor.insertSpaces": false,
     "cSpell.enabled": true,
     "cSpell.words": [
+        "luasqlite3",
+        "lsqlite3",
         "kolibrios",
         "libini",
         "ksys_",

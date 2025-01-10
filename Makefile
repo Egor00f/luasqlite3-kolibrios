@@ -73,7 +73,7 @@ install: $(T) $(OBJS) $(SQLITE3_DIR)/libsqlite3.dll.a
 	$(INSTALL) $< `$(INSTALLPATH) $(MYLIB)`
 
 clean:
-	rm -f $(OBJS) $T core core.* a.out test.db
+	rm -f $(OBJS) $T core
 
 html:
 	$(POD2HTML) --title="LuaSQLite 3" --infile=doc/lsqlite3.pod --outfile=doc/lsqlite3.html

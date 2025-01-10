@@ -30,7 +30,7 @@
 -- Copyright (c) 2005-18 Doug Currie
 -- Same license as above
 
-local sqlite3 = require(arg[1]) -- "lsqlite3complete" or "lsqlite3"
+local sqlite3 = require("lsqlite3") -- "lsqlite3complete" or "lsqlite3"
 
 local os = os
 

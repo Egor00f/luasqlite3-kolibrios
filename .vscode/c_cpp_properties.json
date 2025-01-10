@@ -25,7 +25,8 @@
             "defines": [],
             "cStandard": "c11",
             "cppStandard": "c++11",
-            "compilerPath": "/home/autobuild/tools/win32/bin/kos32-gcc"
+            "compilerPath": "/home/autobuild/tools/win32/bin/kos32-gcc",
+            "intelliSenseMode": "gcc-x86"
         }
     ],
     "version": 4
