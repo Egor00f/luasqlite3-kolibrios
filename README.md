@@ -19,7 +19,7 @@ Lua 5 is available from http://www.lua.org/
 
 ## Installation
 
-1. install lua
+1. install [lua](https://git.kolibrios.org/Lua/Lua)
 2. move `lsqlite3.dll` to `/kolibrios/lib/lua`
 3. rename(or copy) `/kolibrios/lib/sqlite.dll` to `/kolibrios/lib/libsqlite.dll` 
 
